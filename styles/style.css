@@ -14,7 +14,7 @@ body {
 header {
     background:rgb(24, 24, 24);     
     width: 100vw;
-    box-shadow: 0 1rem 1rem rgb(8, 8, 8);
+    box-shadow: 0 0rem 1rem rgb(8, 8, 8);
     display: table-cell; 
     vertical-align: middle;
 }
@@ -31,17 +31,22 @@ main {
     padding: 2rem;
 }
 legend {
-    background: -webkit-linear-gradient(rgb(16, 16, 16), rgb(8, 8, 8));
+    background: -webkit-linear-gradient(rgb(16, 16, 16), rgb(14, 14, 14));
     padding: 0.25rem 0.5rem;
     font-size: 1.25rem;
     margin: auto;
 }
 fieldset {
-    background: rgb(8, 8, 8);
+    background: rgb(14, 14, 14);
     border:0.2rem solid rgb(96, 96, 96);
     border-radius: 0.2rem;
 }
 
 #wave{
-    width: calc(25% - 2rem);
+    width: calc(35% - 4rem);
 }
+
+input[type="range"] {
+    writing-mode: bt-lr;
+    -webkit-appearance: slider-vertical;
+  }
