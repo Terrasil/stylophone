@@ -2,3 +2,8 @@
   font-family: 'Merkurius';
   src: url('../fonts/Merkurius.otf') format("opentype");
 }
+
+@font-face {
+  font-family: 'Audiowide';
+  src: url('../fonts/Audiowide.ttf') format("truetype");
+}

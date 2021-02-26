@@ -1,4 +1,8 @@
-body{
+html {
+    font-family: 'Audiowide';    
+    color: rgb(96, 96, 96);
+}
+body {
     overflow: hidden;
     padding: 0;
     margin: 0;
@@ -7,7 +11,7 @@ body{
     background:rgb(16, 16, 16);             
 }
 
-header{
+header {
     background:rgb(24, 24, 24);     
     width: 100vw;
     box-shadow: 0 1rem 1rem rgb(8, 8, 8);
@@ -17,8 +21,27 @@ header{
 h1 {
     font-family: 'Merkurius';
     font-size: 4rem;
-    margin: 1rem;
+    margin: 2rem;
     background: -webkit-linear-gradient(silver, gray);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+main {
+    padding: 2rem;
+}
+legend {
+    background: -webkit-linear-gradient(rgb(16, 16, 16), rgb(8, 8, 8));
+    padding: 0.25rem 0.5rem;
+    font-size: 1.25rem;
+    margin: auto;
+}
+fieldset {
+    background: rgb(8, 8, 8);
+    border:0.2rem solid rgb(96, 96, 96);
+    border-radius: 0.2rem;
+}
+
+#wave{
+    width: calc(25% - 2rem);
 }
