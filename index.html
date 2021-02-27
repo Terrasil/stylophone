@@ -9,16 +9,49 @@
         <meta name="theme-color" content="#111111">
         <link rel="stylesheet" href="styles/font.css">
         <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/scrollbar.css">
     </head>
     <body>
         <header>
             <h1>Stylophone</h1>
         </header>
-        <main>
-            <fieldset id="wave">
-                <legend>WAVE</legend>
-                <input type="range" class="slider" height="10%" min="0" max="4" value="3"/>
-            </fieldset> 
+        <main> 
+            <div class="spacer">
+                <fieldset id="wave">
+                    <legend>WAVE</legend>
+                    <div class="grid-container">
+                        <div class="slider">
+                        </div>
+                        <div class="square">
+                            <svg name="square-function" class="display-function" viewBox="0 0 200 100">
+
+                            </svg>
+                        </div>
+                        <div class="sine">
+                            <svg name="sine-function" class="display-function" viewBox="0 0 200 100">
+
+                            </svg>
+                        </div>
+                        <div class="sawtooth">
+                            <svg name="sawtooth-function" class="display-function" viewBox="0 0 200 100">
+
+                            </svg>
+                        </div>
+                        <div class="trinagle">
+                            <svg name="trinagle-function" class="display-function" viewBox="0 0 200 100">
+
+                            </svg>
+                        </div>
+                    </div>
+                </fieldset> 
+                <fieldset id="master">
+                    <legend>MASTER</legend>
+                </fieldset> 
+                <fieldset id="keys">
+                    <legend>KEYS</legend>
+                </fieldset>
+            </div>        
         </main>
         <section>
             <!--Keyboard-->

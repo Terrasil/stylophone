@@ -1,0 +1,46 @@
+#wave{
+    width: calc(30vw - 0.4rem);
+    float: left;
+}
+
+#wave .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "slider square"
+      "slider sine"
+      "slider sawtooth"
+      "slider trinagle";
+}
+#wave .slider { 
+    grid-area: slider; 
+}
+#wave .square { 
+    grid-area: square; 
+}
+#wave .sine { 
+    grid-area: sine; 
+}
+#wave .sawtooth { 
+    grid-area: sawtooth; 
+}
+#wave .trinagle { 
+    grid-area: trinagle; 
+}
+
+#master{
+    width: calc(20vw - 0.4rem);
+    float: left;
+}
+#keys{
+    width: calc(50vw - 1.4rem)
+    float: left;
+}
+
+@media screen and (max-width:720px) {
+    #wave, #master, #keys {
+        width:calc(100vw - 6.8rem);
+    }
+}
