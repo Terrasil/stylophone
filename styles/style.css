@@ -7,20 +7,22 @@ body {
     margin: 0;
     width: 100vw;
     height: 100vh;
-    background:rgb(16, 16, 16);             
+    background:rgb(16, 16, 16);      
+    overflow-x: hidden;       
 }
 
 header {
     background:rgb(24, 24, 24);     
     width: 100vw;
+    max-height: 10vh;
     box-shadow: 0 0rem 1rem rgb(8, 8, 8);
     display: table-cell; 
     vertical-align: middle;
 }
 h1 {
     font-family: 'Merkurius';
-    font-size: 4rem;
-    margin: 2rem;
+    font-size: 4vw;
+    margin: 2vw;
     background: -webkit-linear-gradient(silver, gray);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -31,7 +33,7 @@ main {
 main .spacer{
     margin: 2rem;
     width: calc(100vw - 4rem);
-    height: 80vh;
+    max-height: 80vh;
 }
 legend {
     background: -webkit-linear-gradient(rgb(16, 16, 16), rgb(14, 14, 14));
@@ -43,4 +45,14 @@ fieldset {
     border: 0.2rem solid rgb(96, 96, 96);
     background: rgb(14, 14, 14);
     border-radius: 0.2rem;
+}
+section{
+    background:rgb(24, 24, 24);   
+    max-height: 20vh;
+}
+
+
+@media screen and (max-width:720px) {
+    h1 {
+    }
 }
